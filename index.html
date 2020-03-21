@@ -9,11 +9,48 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Document</title>
+    <title>Todos</title>
 </head>
 
 <body>
+    <div class="container">
+        <!-- HEADER -->
+        <header class="text-center text-light my-4">
+            <h1 class="mb-4">Todo List</h1>
+            <form class="search">
+                <input type="text" class="form-control m-auto" name="search" placeholder="Seach">
+            </form>
+        </header>
 
+        <!-- Section -DISPLAY -->
+        <section class="section-display">
+            <ul class="list-group todos mx-auto text-light">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span>go to the gym</span>
+                    <i class="far fa-trash-alt delete"></i>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span>go to the grocery</span>
+                    <i class="far fa-trash-alt delete"></i>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span>cook dinner</span>
+                    <i class="far fa-trash-alt delete"></i>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Section--->
+        <footer>
+            <form class="add text-center my-4">
+                <label class="text-light">Add new todo....</label>
+                <input type="text" class="form-control" name="add">
+            </form>
+        </footer>
+
+    </div>
+
+    <script src="app.js"></script>
 </body>
 
 </html>
