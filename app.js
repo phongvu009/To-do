@@ -25,7 +25,7 @@ addFormTodo.addEventListener('submit', e => {
 
 //Add click event to the form. Find the class delete to romve the li 
 ul.addEventListener('click', e => {
-    console.log(e.target.classList);//e.target will track the click in the form
+    // console.log(e.target.classList);//e.target will track the click in the form
     if (e.target.classList.contains('delete')) {//classList to find the list of class of that element. contain will return boolean
         e.target.parentElement.remove();           //if true find the parent of i which is li    
     };
